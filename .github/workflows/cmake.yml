@@ -1,0 +1,30 @@
+﻿name: CMake Build with Hunter
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  # Пробрасываем флаг игнорирования uninitialized варнинга на уровне всей ОС в CI
+  CXXFLAGS: "-Wno-error=maybe-uninitialized"
+  CFLAGS: "-Wno-error=maybe-uninitialized"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        submodules: recursive
+
+    - name: Configure CMake
+      run: cmake -H. -B_builds -DBUILD_TESTS=ON -DCMAKE_BUILD_TYPE=Release
+
+    - name: Build
+      run: cmake --build _builds
+
+    - name: Run Tests
+      run: cmake --build _builds --target test

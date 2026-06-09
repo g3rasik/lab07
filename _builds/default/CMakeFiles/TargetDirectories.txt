@@ -1,0 +1,8 @@
+/home/g3rasik/g3rasik/workspace/projects/lab07/_builds/default/CMakeFiles/print.dir
+/home/g3rasik/g3rasik/workspace/projects/lab07/_builds/default/CMakeFiles/demo.dir
+/home/g3rasik/g3rasik/workspace/projects/lab07/_builds/default/CMakeFiles/edit_cache.dir
+/home/g3rasik/g3rasik/workspace/projects/lab07/_builds/default/CMakeFiles/rebuild_cache.dir
+/home/g3rasik/g3rasik/workspace/projects/lab07/_builds/default/CMakeFiles/list_install_components.dir
+/home/g3rasik/g3rasik/workspace/projects/lab07/_builds/default/CMakeFiles/install.dir
+/home/g3rasik/g3rasik/workspace/projects/lab07/_builds/default/CMakeFiles/install/local.dir
+/home/g3rasik/g3rasik/workspace/projects/lab07/_builds/default/CMakeFiles/install/strip.dir
